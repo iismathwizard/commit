@@ -1,0 +1,123 @@
+html, body{
+    font-family: 'Gill Sans MT', Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#header{
+    background-color: #1eaabd;
+}
+    #headerLogo {
+        height: 14vh;
+        float: left;
+    }
+    #headerText {
+        float: right;
+        padding-right: 2em;
+        font-size: 2em;
+        color: #FFF;
+    }
+
+#body {
+    min-height: 75vh; 
+    padding: 1em;
+    background-image: url("img/school.png");
+}
+
+
+
+#footer {
+    bottom: 0;
+    clear: both;
+    position: relative;
+    background-color: #1EAABD;
+}
+    #footerList {
+        border-top: 1px solid white;
+        transition: .75s;
+        list-style: none;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .footerItem {
+        display: inline-block;
+        padding: 1.25em;
+        padding-left: 2em;
+        padding-right: 2em;
+        color: #FFF;
+    }
+        .footerItem:active {
+        color: #C4D0F5;
+        background-color: #0d6666;
+        }
+        .footerItem:hover {
+        background-color: #0d6666;
+        }
+
+
+.singleClass {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.4);
+    padding: 1em;
+    margin: 1em;
+    width: 25vw;
+    transition: 0.5s;
+}
+    .singleClass:hover {
+        background-color: #90D5AF;
+    }
+
+.previewThumbnail {
+    width: 85%;
+    background-color: #FFF;
+    padding: 1em;
+}
+.previewTitle {
+    font-weight: bolder;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+}
+.previewStart {
+    font-weight: bold;
+}
+.previewEnd {
+    font-weight: bold;
+}
+
+.linkingClass {
+    text-decoration: none;
+    color: black;
+}
+
+.backBttn {
+    background-color: #1eaabd;
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+    width: 15vw;
+    text-align: center;
+    padding: .5em;
+    transition: 0.5s;
+}
+    .backBttn:hover {
+    background-color: #1B7986;
+}
+
+.detailList {
+    padding-left: 4em;
+    padding-bottom: 3em;
+}
+
+.aDetail {
+    font-size: 1.3em;
+}
+
+
+
+
+
+.clearfix {
+    clear: both;
+}

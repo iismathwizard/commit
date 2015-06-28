@@ -1,0 +1,122 @@
+TEMPLATE:
+{
+	"status" : "true/false",
+	"data" :
+	{
+
+	}
+}
+
+CreateAccount (email, password)
+{
+	"status" : "true/false",
+	"data" : 
+	{
+		"sessionid" : "somestringidvaluehere"
+	}
+}
+
+Login (email, password):
+{
+	"status" : "true/false",
+	"data" :
+	{
+		"sessionid" : "somestringidvaluehere"
+	}
+}
+
+Logout (sessionid)
+{
+	"status" : "true/false",
+	"data" : { }
+}
+
+GetClasses (sessionid):
+{
+	"status" : "true/false",
+	"data" :
+	{
+		"classes" : [
+			{
+				"name" : "Class Name",
+				"id" : "1",
+				"usersInPool": "8",
+				"usersInPoolRemaining" : "6",
+				"poolBuyin" : "5.00",
+				"poolWorth" : "40.00",
+				"endRegistrationDate" : "883729313",
+				"endPoolDate" : "883729399",
+				"isOwner" : "true/false",
+				"icon" : "http://www.google.com/images/coolimageurl"
+			},
+			{
+				"name" : "Class Name",
+				"id" : "2",
+				"usersInPool": "8",
+				"usersInPoolRemaining" : "6",
+				"poolBuyin" : "5.00",
+				"poolWorth" : "40.00",
+				"endRegistrationDate" : "883729313",
+				"endPoolDate" : "883729399",
+				"isOwner" : "true/false",
+				"icon" : "http://www.google.com/images/coolimageurl2"
+			}
+		]
+	}
+}
+
+LeaveClass (sessionid, classid):
+{
+	"status" : "true/false",
+	"data" : {}
+}
+
+JoinClass (sessionid, invitekey)
+{
+	"status" : "true/false",
+	"data" : {}
+}
+
+CreateClass(sessionid, emails, endRegistrationDate, endPoolDate, poolBuyin, name, description, optional* icon)
+{
+	"status" : "true/false",
+	"data": {}
+}
+
+GetUsers (sessionid, classid)
+{
+	"status" : "true/false",
+	"data" : 
+	{
+		"users" : [
+			{
+				"email" : "test@account.com",
+				"id" : "0",
+				"valid" : "true"
+			},
+			{
+				"email" : "yolo@junior.com",
+				"id" : "69",
+				"valid" : "false"
+			}
+		]
+	}
+}
+
+KickUser (sessionid, classid, userid)
+{
+	"status" : "true/false",
+	"data" : {}
+}
+
+InviteUsers (sessionid, classid, emails)
+{
+	"status" : "true/false",
+	"data" : {}
+}
+
+FinalizeClass (sessionid, classid)
+{
+	"status" : "true/false",
+	"data" : {}
+}

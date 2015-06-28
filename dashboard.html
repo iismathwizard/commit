@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Commit</title>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/poolService.js"></script>    
+    
+    <!-- CONTROLLERS -->
+    <script src="js/singleController.js"></script>
+    <script src="js/detailController.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dashstyle.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body ng-app="commitApp" onload="gotoDash();">
+    <!-- HEADER -->
+    <div id="header">
+        <img src="img/fullLogo2.png" id="headerLogo" />
+        <!-- <span id="headerText">hello</span> -->
+
+        <div class="clearfix"></div>
+    </div>
+
+    <!-- PART THAT CHANGES -->
+    <div id="body">
+
+        <div ng-view></div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer" >
+        <ul id="footerList">
+            <a href="#/singleClass">
+                <li class="footerItem">dashboard</li>
+            </a>
+            <a href="#/create">
+                <li class="footerItem">create class</li>
+            </a>
+            <a href="index.html">
+                <li class="footerItem">log out</li>
+            </a>
+        </ul>
+    </div>
+
+
+</body>
+</html>

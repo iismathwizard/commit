@@ -1,0 +1,25 @@
+<h1>Your current pools:</h1>
+<hr />
+
+<div class="container-fluid">
+    <center>
+        <div class="row">
+
+            <!-- NG REPEAT HERE-->
+            <div class="col-md-4 singleClass" ng-repeat="class in classes">
+                <a href="#/singleClass/{{$index}}" class="linkingClass">
+                    <span class="previewTitle"> {{class.name}} </span><br />
+                    <div class="thumbnail">
+                        <img class="previewThumbnail " ng-src="img/thumb.png">
+                    </div>
+
+                    <span class="previewStart"> From {{class.endRegistrationDate | date:"shortDate"}} to {{class.endPoolDate | date:"shortDate"}}</span><br />
+                    <span class="previewEnd"> {{class.usersInPool}} of {{class.usersInPoolRemaining}} user(s) remaining</span><br />
+                    <span class="previewEnd"> Current payout: {{(class.poolWorth/class.usersInPoolRemaining) | currency}} </span><br />
+                    </a>
+</div>
+                        
+
+        </div>
+    </center>
+</div>

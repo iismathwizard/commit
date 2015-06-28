@@ -1,0 +1,240 @@
+@keyframes learning {
+    50% {color: #0ce361;}
+    100% {color: #00c0da} 
+}
+
+@keyframes float {
+    50% {width: 85%;}
+    100% {width: 80%} 
+}
+
+html, body{
+    font-family: 'Gill Sans MT', Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*
+    background-color: #EAE8FF;
+    */
+    height: 100%;
+}
+
+#header{
+    background-color: #1eaabd;
+    height:100vh;
+}
+    #headerLogo {
+        width: 90vw;
+        float: left;
+    }
+    .headerText {
+        float: right;
+        padding-right: 2em;
+        padding-left: 2em;
+        font-size: 2em;
+        color: white;
+        position: absolute;
+        bottom: 1em;
+        right: 0em;
+    }
+
+#body {
+    min-height: 90vh; 
+    padding: 1em;
+    background-image: url("img/school.png");
+}
+
+
+
+#footer {
+    bottom: 0;
+    clear: both;
+    position: relative;
+    background-color: #1EAABD;
+}
+    #footerList {
+        color: #fff;
+        border-top: 1px solid white;
+        list-style: none;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .footerItem {
+        font-weight: bold;
+        display: inline-block;
+        padding: 1.25em;
+        padding-left: 2em;
+        padding-right: 2em;
+        transition: .75s;
+        color: white;
+    }
+        .footerItem:active {
+        color: #C4D0F5;
+        background-color: #0d6666;
+        }
+        .footerItem:hover {
+        background-color: #0d6666;
+        }
+
+
+.clearfix {
+    clear: both;
+}
+
+
+
+/* FRONT PAGE */
+#frontLeft {
+    float: left;
+}
+
+#frontImage {
+    width: 40vw;
+}
+
+#frontRight {
+    padding: 1em;
+    padding-left: 45vw;
+    padding-top: 2em;
+}
+
+.biggertitle {
+    font-size: 3em;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.tagline {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+/*END FRONT PAGE STYLING*/
+
+
+.bttn {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+    background-color: #1F7A1F;
+    border: none;
+    color: white;
+    font-size: 2em;
+    font-family: 'Gill Sans MT', Calibri, sans-serif;
+    transition: 0.25s;
+}
+    .bttn:hover {
+        background-color: #569C48;
+    }
+    .bttn:active {
+        background-color: #C6F0BD;
+        color: white;
+    }
+
+/*SIGN UP */
+#signupForm {
+    width: 75vw;
+}
+
+#loginForm {
+    width: 75vw;
+}
+/*END SIGN UP*/
+
+/*FAQ STUFF*/
+.aQuestion {
+    background-color:rgba(255,255,255,0.4) ;
+}
+
+.questions {
+    padding: 1em;
+    padding-bottom: 0em;
+}
+
+.answers {
+    padding: 1em;
+    padding-top: 0em;
+    padding-left: 2em;
+}
+
+/*END FAQ STUFF*/
+
+.learnText {
+    color: white;
+    font-size: 3.25em;
+    font-weight: bolder;
+}
+
+.learnInput{
+    height: 1.75em;
+    font-size: 3em;
+
+}
+
+.learnthing {
+    padding-top: 5em;
+    margin-right: 0px;
+}
+
+.form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.goBtn {
+    font-size: 3.75em;
+    font-weight: bolder;
+    background-color: #48eb89;
+    color: white;
+    transition: 0.5s;
+}
+    .goBtn:hover {
+        background-color: #0ce362;
+    }
+    .goBtn:active{
+        background-color: #27a970;
+    }
+
+
+
+.form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+.mainBttn {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    width: 17.5%;
+    
+    margin-top:.5em;
+    margin-left:.5em;
+    margin-right:.5em;
+    display: inline-block;
+    background-color: #1F7A1F;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Gill Sans MT', Calibri, sans-serif;
+    transition: 0.25s;
+}
+    .mainBttn:hover {
+        background-color: #569C48;
+    }
+    .mainBttn:active {
+        background-color: #48eb89;
+        color: white;
+    }

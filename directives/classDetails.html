@@ -1,0 +1,15 @@
+<h1>{{class.name}}</h1>
+<hr />
+<ul class="detailList">
+    <li class="aDetail">This pool starts on {{class.endRegistrationDate | date:"mediumDate"}} and ends on {{class.endPoolDate | date:"mediumDate"}}</li>
+    <li class="aDetail">There are {{class.usersInPoolRemaining}} of {{class.usersInPool}} people total in this pool</li>
+    <li class="aDetail">You initially invested {{ class.poolBuyin | currency}} in youself</li>
+
+    <li class="aDetail">Your current pool payout is {{ (class.poolWorth / class.usersInPoolRemaining) | currency }}!</li>
+</ul>
+
+
+
+<a href="#/singleClass" class="linkingClass">
+    <div class="backBttn">Back</div>
+</a>
